@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
 
+
+import BasicLayout from '../layouts/BasicLayout';
 
 export default function Home() {
   return (
-    <div className='home'>
+    <BasicLayout>
       <h1>Hello</h1>
-    </div>
+    </BasicLayout>
+  
   )
 }
