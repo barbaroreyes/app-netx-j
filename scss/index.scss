@@ -1,3 +1,6 @@
 @import'./colors.scss';
 //layouts
-@import '../layouts/BasicLayout.scss'
+@import '../layouts/BasicLayout.scss';
+
+//components
+@import '../component/Header/Header.scss'
