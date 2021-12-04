@@ -1,4 +1,29 @@
 .top-bar{
-    background-color: $background-grey;
-    color:$primary ;
+    border-top: 1px solid;
+    height: 90px;
+     background-color: $background-dark-absolute;
+     color:$primary;
+     .ui.grid{
+         margin: 0;
+         padding: 0;
+         .column{
+             padding: 0;
+         }
+     }
+     &__left{
+        display: flex;
+        align-items: center;
+        img{
+            height: 50px;
+            border-radius:50%;
+            transition: all 0.5s;
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+
+     }
+}
+.top-bar__left{
+
 }

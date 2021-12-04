@@ -7,10 +7,10 @@ export default function TopBar() {
     <Container>
       <Grid className="top-bar">
         <Grid.Column width={8} className="top-bar__left">
-      <Logo/>
+         <Logo/>
         </Grid.Column> 
-        <Grid.Column width={8} className="top-bar__rigt">
-        <h1>Search</h1>
+        <Grid.Column width={8} className="top-bar__right">
+        <Search/>
         </Grid.Column> 
         
       </Grid>
@@ -22,9 +22,18 @@ export default function TopBar() {
 function Logo () {
   return (<Link href="/">
     <a>
-    <Image style={{borderRadius:'50%'}} src ='/l.m.j.1.png' width ='100px' height='100px'alt ='picture'/>
+    <Image src ='/l.m.j.1.png' alt ='picture'/>
     </a>
   </Link>
    
+  )
+}
+
+function Search (){
+  return(
+    <Input
+    id="search-name"
+    icon={{name: 'search'}}
+    />
   )
 }
